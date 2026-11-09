@@ -1,0 +1,23 @@
+{
+  "name": "@cad-quote/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --import tsx --watch src/main.ts",
+    "start": "node --import tsx src/main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cad-quote/contract": "workspace:*",
+    "@fastify/multipart": "^10.1.8",
+    "better-sqlite3": "^13.0.3",
+    "fastify": "^5.12.8",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
